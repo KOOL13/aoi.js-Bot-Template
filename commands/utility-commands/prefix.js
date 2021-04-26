@@ -1,5 +1,6 @@
 module.exports = {
   name: 'prefix',
+  aliases: ['setprefix', 'set-prefix']
   code: `$setServerVar[prefix;$message]
 Prefix has been set to: \`$message\`
 $onlyIf[$message!=;Current prefix is: \`$getServerVar[prefix]\`.
