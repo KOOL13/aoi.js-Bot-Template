@@ -6,8 +6,6 @@ This repository contains everything on how to get started with a new dbd.js bot.
 
 # How to Use
 
-StackEdit stores your files in your browser, which means all your files are automatically saved locally and are accessible **offline!**
-
 ## Bot Token
 Place your bot's token in the following spot:
 ```
@@ -58,7 +56,7 @@ bot.status({
 })
 ```
 For Multiple Statuses:
-`time` is how long you want each status to switch for
+`time` is how long you want each status to be for until it switches
 ```
 bot.status({
 	status: 'online',
