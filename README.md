@@ -3,6 +3,7 @@
 This repository contains everything on how to get started with a new dbd.js bot.
 > You should have dbd.js installed. To do this, type `npm install dbd.js` into the terminal. (If you are using Glitch or Replit, it should automatically get installed.)
 
+> Important Note: You should change the package.json file depending on what the latest version of dbd.js and dbdjs.db are.
 
 # How to Use
 
@@ -72,6 +73,18 @@ bot.status({
 	time: 10
 })
 ```
+## Variables
+Variables are very simple, just go to index.js and in `bot.variables` add them in the format `name: value`. Example:
+```
+bot.variables({
+	prefix: '!',
+	money: 0,
+	name: 'KOOL',
+	number: 13,
+})
+```
+
+
 ## Creating Commands
 
 Inside of the `commands` folder, create a new file with any name (make sure you add .js at the end). Files can be located inside sub-folders as well if you want to stay organized. I will be making a ping command as an example.
