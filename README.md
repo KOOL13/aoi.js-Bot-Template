@@ -16,14 +16,18 @@ const bot = new dbd.Bot({
 })
 ```
 _____
-Hiding your token:
+(Optional) Hiding your token:
 1. Install the `dotenv` package (`npm install dotenv`)
 2. Create a file named `.env`
 3. Inside that file, put the following. Replace "YOUR TOKEN HERE" with your bot's token. (Do NOT use quotation marks)
 ```
 token=YOUR TOKEN HERE
 ```
-4. In your main file, put this for your token:
+4. In your main file, add:
+```
+require('dotenv').config()
+```
+and have your token as:
 ```
 const bot = new dbd.Bot({
 	token: process.env.token,
