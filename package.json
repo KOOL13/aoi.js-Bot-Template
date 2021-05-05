@@ -12,7 +12,7 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-      "dbd.js": "^3.0.6",
+      "aoi.js": "^1.0.6",
       "dbdjs.db": "^1.0.2"
     }
   }
