@@ -1,16 +1,16 @@
-# DBD.JS Bot Template
+# aoi.js Bot Template
 
-This repository contains everything on how to get started with a new dbd.js bot.
-> You should have dbd.js installed. To do this, type `npm install dbd.js` into the terminal. (If you are using Glitch or Replit, it should automatically get installed.)
+This repository contains everything on how to get started with a new aoi.js bot.
+> You should have aoi.js installed. To do this, type `npm install aoi.js` into the terminal. (If you are using Glitch or Replit, it should automatically get installed.)
 
-> Important Note: You should change the package.json file depending on what the latest version of dbd.js and dbdjs.db are.
+> Important Note: You should change the package.json file depending on what the latest version of aoi.js and dbdjs.db are.
 
 # How to Use
 
 ## Bot Token
 Place your bot's token in the following spot:
 ```
-const bot = new dbd.Bot({
+const bot = new Aoijs.Bot({
 	token: 'YOUR BOT TOKEN HERE',
 	prefix: '!'
 })
@@ -29,7 +29,7 @@ require('dotenv').config()
 ```
 and have your token as:
 ```
-const bot = new dbd.Bot({
+const bot = new Aoijs.Bot({
 	token: process.env.token,
 	prefix: '!'
 })
@@ -39,7 +39,7 @@ const bot = new dbd.Bot({
 ## Bot Prefix
 
 ```
-const bot = new dbd.Bot({
+const bot = new Aoijs.Bot({
 	token: '',
 	prefix: [`$getServerVar[prefix]`,  '<@$clientID>',  '<@!$clientID>'],
 })
