@@ -1,7 +1,7 @@
 //Make sure to check the README.md for other examples/usage
 
 const Aoijs = require("aoi.js")
-const bot = new aoijs.Bot({
+const bot = new Aoijs.Bot({
   token: 'YOUR BOT TOKEN HERE',
   prefix: [`$getServerVar[prefix]`, '<@$clientID>', '<@!$clientID>'], // The server prefix, and mentioning the bot will both work as a prefix
   mobile: false //Whether or not the bot has a mobile status
