@@ -15,26 +15,7 @@ const bot = new Aoijs.Bot({
 	prefix: '!'
 })
 ```
-_____
-(Optional) Hiding your token:
-1. Install the `dotenv` package (`npm install dotenv`)
-2. Create a file named `.env`
-3. Inside that file, put the following. Replace "YOUR TOKEN HERE" with your bot's token. (Do NOT use quotation marks)
-```
-token=YOUR TOKEN HERE
-```
-4. In your main file, add:
-```
-require('dotenv').config()
-```
-and have your token as:
-```
-const bot = new Aoijs.Bot({
-	token: process.env.token,
-	prefix: '!'
-})
-```
-> Note: If you are using Replit or Glitch, you don't need to install anything, just go to the env section and put your token.
+> If your code is going to be public (for example replit), you should use .env to hide your token.
 
 ## Bot Prefix
 
@@ -44,7 +25,7 @@ const bot = new Aoijs.Bot({
 	prefix: [`$getServerVar[prefix]`,  '<@$clientID>',  '<@!$clientID>'],
 })
 ```
-This allows for mentioning the bot to work as a prefix too. To change the default prefix, go to index.js and find
+This allows for mentioning the bot to work as a prefix too. You can remove it if you want. To change the default prefix, go to index.js and find:
 ```
 bot.variables({
 	prefix: 'YOUR PREFIX HERE'
@@ -55,9 +36,9 @@ bot.variables({
 For A Single Status:
 ```
 bot.status({
-	status: 'online', // options: online (if want mobile status, check above), idle, dnd, invisible
+	status: 'online', // options: online, idle, dnd, invisible
 	type: 'PLAYING', // options: WATCHING, PLAYING, LISTENING, COMPETING, STREAMING (if you choose streaming, you can also add the url: '' property)
-	text: `on $serverCount servers` //Whatever text you want
+	text: `on $serverCount servers` //Whatever text you want, you can use $serverCount and $allMembersCount too.
 })
 ```
 For Multiple Statuses:
@@ -84,7 +65,7 @@ bot.variables({
 	prefix: '!',
 	money: 0,
 	name: 'KOOL',
-	number: 13,
+	// etc...
 })
 ```
 
@@ -95,7 +76,7 @@ Inside of the `commands` folder, create a new file with any name (make sure you 
 ```
 module.exports = {
 	name: 'ping', //Name = command name
-	aliases: ['pong', 'botping'], // Aliases = Other names of the command
+	aliases: ['pong', 'botping'], // Other names of the command
 	code: `Pong! - $botPingms` //The actual code of the command
 }
 ```
