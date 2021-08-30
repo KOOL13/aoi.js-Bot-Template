@@ -5,7 +5,7 @@ Already know aoi.js? Click below to fork the code.
 <br><br>
 <a href='https://replit.com/github/KOOL13/aoi.js-Bot-Template' target='_blank'><img alt='Repl.it' src='https://img.shields.io/badge/Repl.it-%230D101E.svg?style=for-the-badge&logo=replit&logoColor=white'></a>
 <a href='https://glitch.com/edit/#!/import/git?url=https://github.com/KOOL13/aoi.js-Bot-Template' target='_blank'><img alt='Glitch' src='https://img.shields.io/badge/glitch-%233333FF.svg?style=for-the-badge&logo=glitch&logoColor=white'></a>
-
+__________________________
 This repository contains everything on how to get started with a new aoi.js bot.
 > You should have aoi.js installed. To do this, type `npm install aoi.js` into the terminal. (If you are using Glitch or Replit, it should automatically get installed.)
 
