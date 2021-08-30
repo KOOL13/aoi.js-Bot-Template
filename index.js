@@ -12,6 +12,13 @@ bot.onMessage({
   guildOnly: false, // Whether or not commands work in DMs
   respondToBots: false, //Whether or not the bot will respond to other bots
 })
+bot.onInteractionCreate()
+
+// Ready Event
+bot.readyCommand({
+  channel: '',
+  code: `$log[Ready on client $userTag[$clientID]]`
+})
 
 // Command Handler
 bot.loadCommands('./commands')
