@@ -1,9 +1,12 @@
 # aoi.js Bot Template
 
+### Quick Start
+Already know aoi.js? Click below to clone the code.
+
 This repository contains everything on how to get started with a new aoi.js bot.
 > You should have aoi.js installed. To do this, type `npm install aoi.js` into the terminal. (If you are using Glitch or Replit, it should automatically get installed.)
 
-> Important Note: You should change the package.json file depending on what the latest version of aoi.js and dbdjs.db are.
+> Important Note: You should change the package.json file depending on what the latest version of aoi.js is (for v5 change the branch).
 
 # How to Use
 
@@ -39,25 +42,10 @@ bot.status({
 	status: 'online', // options: online, idle, dnd, invisible
 	type: 'PLAYING', // options: WATCHING, PLAYING, LISTENING, COMPETING, STREAMING (if you choose streaming, you can also add the url: '' property)
 	text: `on $serverCount servers` //Whatever text you want, you can use $serverCount and $allMembersCount too.
+	time: 10 //If you want multiple statuses add the time property for how long each status will be until it switches.
 })
 ```
-For Multiple Statuses:
-`time` is how long you want each status to be for until it switches
-```
-bot.status({
-	status: 'online',
-	type: 'PLAYING',
-	text: `on $serverCount servers`,
-	time: 10
-})
 
-bot.status({
-	status: 'online',
-	type: 'WATCHING',
-	text: `Im alive!`,
-	time: 10
-})
-```
 ## Variables
 Variables are very simple, just go to index.js and in `bot.variables` add them in the format `name: value`. Example:
 ```
