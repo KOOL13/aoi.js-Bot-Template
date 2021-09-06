@@ -39,7 +39,6 @@ bot.variables({
 ```
 
 ## Bot Status
-For A Single Status:
 ```
 bot.status({
 	status: 'online', // options: online, idle, dnd, invisible
