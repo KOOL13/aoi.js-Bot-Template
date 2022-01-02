@@ -1,5 +1,7 @@
 # aoi.js Bot Template
 
+**aoi.js v4 has been deprecated, this template is no longer up to date.**
+
 ### Quick Start
 Already know aoi.js? Click below to fork the code.
 <br><br>
